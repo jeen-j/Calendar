@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="23">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_group1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="group1"
+                />
+            <Button
+                android:id="@+id/btn_group2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="group2"
+                />
+            <Button
+                android:id="@+id/btn_group3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="group3"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+                <Button
+                    android:id="@+id/monthPrevious"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Pre"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/currentMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center"
+                    android:text="CurrentMonth"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/monthNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Next"
+                    android:textSize="22dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="7dp"
+            android:gravity="center_vertical"
+            android:weightSum="7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+
+                android:text="SUN"
+                android:textSize="21dp"
+
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+
+                android:text="MON"
+                android:textSize="21dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+
+                android:text="TUE"
+                android:textSize="21dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+
+                android:text="WED"
+                android:textSize="21dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+
+                android:text="THU"
+                android:textSize="21dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+
+                android:text="FRI"
+                android:textSize="21dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+
+                android:text="SAT"
+                android:textSize="21dp"
+
+                android:layout_alignParentRight="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/date_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingTop="15dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_weight="20"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="7">
+
+
+                <TextView
+                    android:id="@+id/date_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+
+                <TextView
+                    android:id="@+id/date_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+
+                <TextView
+                    android:id="@+id/date_view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="7">
+
+
+                <TextView
+                    android:id="@+id/date_view8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+
+                <TextView
+                    android:id="@+id/date_view10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+
+                <TextView
+                    android:id="@+id/date_view12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="7"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/date_view15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+
+                <TextView
+                    android:id="@+id/date_view17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+
+                <TextView
+                    android:id="@+id/date_view19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="7"
+                >
+
+
+                <TextView
+                    android:id="@+id/date_view22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+
+                <TextView
+                    android:id="@+id/date_view24"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+
+                <TextView
+                    android:id="@+id/date_view26"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view27"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view28"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="7">
+
+
+                <TextView
+                    android:id="@+id/date_view29"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view30"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+
+                <TextView
+                    android:id="@+id/date_view31"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+
+                <TextView
+                    android:id="@+id/date_view33"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view34"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view35"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/extend_week_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="7">
+
+
+                <TextView
+                    android:id="@+id/date_view36"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view37"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+
+                <TextView
+                    android:id="@+id/date_view38"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view39"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+
+                <TextView
+                    android:id="@+id/date_view40"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view41"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+                <TextView
+                    android:id="@+id/date_view42"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/border"
+                    android:textSize="21dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
